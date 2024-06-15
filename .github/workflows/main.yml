@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --global yarn
-    - run: yarn --cwd redisinsight/api/
+    - run: yarn install && yarn --cwd redisinsight/api/
     # - run: yarn build:statics
     - run: yarn package:prod
     - run: ls ./release
