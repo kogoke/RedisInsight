@@ -8,6 +8,7 @@ on:
     branches: [ playground ]
   pull_request:
     branches: [ playground ]
+  workflow_dispatch:
 
 jobs:
   build:
