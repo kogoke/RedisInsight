@@ -28,6 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm install --global yarn
     - run: yarn --cwd redisinsight/api/
-    - run: yarn build:statics:win
+    - run: yarn build:statics
     - run: yarn package:prod
     - run: ls ./release
